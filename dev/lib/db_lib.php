@@ -112,6 +112,7 @@ class db {
 		 $query = 'INSERT INTO '.$table.' SET '.$field_values;
 		 $result = $this->db->query($query);
 		 $this->error_tests('insert',$query);
+		 echo $this->db->error;
 		 return $result;
 	 }
 

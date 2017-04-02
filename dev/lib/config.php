@@ -37,7 +37,7 @@ if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") {
 switch($host) {
 	case 'localhost':
 	case '127.0.0.1':
-		$site_url = $http_protocol."://".$host."/project/client/moto/";
+		$site_url = $http_protocol."://".$host."/project/client/moto/ipl-2017/dev";
 		require_once('local.settings.php');
 		break;
 	default:

@@ -1,5 +1,5 @@
 <?php 
-require_once('lib/config.php');
+// require_once('lib/config.php');
 session_start();
 
 //Generating token to prevent CSRF
@@ -23,12 +23,11 @@ $token = $_SESSION['token'];
 </head>
 <body>
 	<h1>Moto IPL Forms</h1>
-    <h2><?php echo $token; ?></h2>
     <form method="POST" name="mainForm" id="mainForm">
-        <input type="text" name="token" id="token" placeholder="FULL NAME" />   
+        <input type="hidden" name="token" id="token" value="<?php echo $token; ?>" />   
         <h4>Applicant details</h4>
         
-        <div><input type="text" name="applicantName" id="applicantName" placeholder="FULL NAME" /></div>
+        <div><input type="text" name="applicantName" id="applicantName" placeholder="FULL NAME" value="demo"/></div>
         
         <div>
         <select name="gender" id="gender">
@@ -37,22 +36,31 @@ $token = $_SESSION['token'];
         </select>
         </div>
         
-        <div><input type="text" name="dob" id="dob" placeholder="Date of birth"/></div>
-        
-        <div><textarea name="childChance" id="childChance"></textarea></div>
+        <div><input type="text" name="dob" id="dob" placeholder="Date of birth" value="09/12/1991"/></div>
 
-        <div><textarea name="puneDifferent" id="puneDifferent"></textarea></div>
+        <div>
+        <select name="shirtSize" id="shirtSize">
+            <option>m</option>
+            <option>asd</option>
+        </select>
+        </div>
+        
+        <div><textarea name="childChance" id="childChance" >fsdf</textarea></div>
+
+        <div><textarea name="puneDifferent" id="puneDifferent">adas</textarea></div>
 
         <h4>Parent/Guardian Details</h4>
 
-        <div><input type="text" name="parentName" id="parentName" placeholder="FULL NAME" /></div>
+        <div><input type="text" name="parentName" id="parentName" placeholder="FULL NAME" value="demo"/></div>
 
-        <div><input type="text" name="parentMobile" id="parentMobile" placeholder="CONTACT NAME" /></div>
+        <div><input type="text" name="parentMobile" id="parentMobile" placeholder="CONTACT NAME" value="demo"/></div>
 
-        <div><input type="email" name="parentEmail" id="parentEmail" placeholder="E-MAIL ADDRESS" /></div>
+        <div><input type="email" name="parentEmail" id="parentEmail" placeholder="E-MAIL ADDRESS" value="demo@adf.com"/></div>
 
+        <div><textarea name="parentAddress" id="parentAddress">asd</textarea></div>
+        
         <div>
-            <input type="radio" name="homeMatch" id="homeMatch" value="1">
+            <input type="radio" name="homeMatch" id="homeMatch" value="1" checked>
             <label for="homeMatch">Rising Giant</label>
         </div>
 
@@ -61,7 +69,12 @@ $token = $_SESSION['token'];
             <label for="homeMatch">RCB</label>
         </div>
 
-        <div><input type="text" name="conditionAccept"></div>
+        <div><input type="text" name="conditionAccept" value='1'></div>
+
+        <div id="submit">Submit</div>
+        
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+        <script type="text/javascript" src="js/script.js"></script>
 
     </form>
 

@@ -5,6 +5,13 @@ function checkLogin($val, $redirect) {
   }
 }
 
+//Test input
+function test_input($input){
+  $input = trim($nput);
+  $input = stripslashes($input);
+  $input = htmlspecialchars($input);
+  return $input;
+}
 
 //Parsing the tweets for links if present
 function linkify($text) {
