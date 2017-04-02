@@ -1,0 +1,9 @@
+#OS junk files
+[Tt]humbs.db
+*.DS_Store
+
+#Visual Studio code editor
+.vscode-upload.json
+
+#Sublime PHp Intel
+.phpintel

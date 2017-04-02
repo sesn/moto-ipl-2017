@@ -1,0 +1,159 @@
+BODY {
+	FONT-FAMILY: verdana, arial, sans-serif; 
+	FONT-SIZE: 9pt;
+}
+
+A {
+	COLOR: #000000; TEXT-DECORATION: none;
+}
+A:visited {
+	COLOR: #000000; TEXT-DECORATION: none;
+}
+A:hover {
+	COLOR: #FF0000
+}
+
+.h1 {
+	FONT-FAMILY: Tahoma, verdana; 
+	FONT-SIZE: 18pt; 
+	FONT-WEIGHT: bold;
+	color:#7DC83A;
+	MARGIN-left: 0px; 
+	}
+	
+	.h2 {
+	FONT-FAMILY: Tahoma,verdana; 
+	FONT-SIZE: 14pt; 
+	FONT-WEIGHT:;
+	color:#ffffff;
+	MARGIN-left: 8px; 
+	}
+
+	.h3 {
+	FONT-FAMILY: Tahoma, verdana; 
+	FONT-SIZE: 10pt; 
+	FONT-WEIGHT: bold;
+	color:#2c56ad;
+	MARGIN-left: 1px; 
+	}
+	
+	.h4 {
+	FONT-FAMILY: Tahoma, verdana; 
+	FONT-SIZE: 10pt; 
+	FONT-WEIGHT: bold;
+	color:#ffffff;
+	MARGIN-left: 5px; 
+	}
+	
+.smalltext {
+	COLOR: #000000; 
+	FONT-FAMILY: Tahoma, verdana; 
+	FONT-SIZE: 8pt; 
+	MARGIN-left: 1px; 
+	}
+
+.smalltext1 {
+	COLOR: #000000; 
+	FONT-WEIGHT: bold;
+	FONT-FAMILY: Tahoma, verdana; 
+	FONT-SIZE: 10pt; 
+	}
+
+INPUT {
+	border-style: solid; 
+	border-width: 1;
+	Font-Family: Arial, Verdana, Tahoma;
+	Font-Size: 12px;
+	Font-Weight: normal;
+	Color: #000000;
+	Margin: 4px 8px 2px 2px;
+}	
+
+TEXTAREA {
+	border-style: solid; 
+	border-width: 1;
+	Font-Family: Arial, Verdana, Tahoma;
+	Font-Size: 12px;
+	Font-Weight: normal;
+	Color: #000000;
+	Margin: 4px 8px 2px 2px;
+}	
+
+.OptionBoxHeading{
+	Font-Family: Arial, Verdana, Tahoma;
+	Font-Size: 8pt;
+	Font-Weight: bold;
+	Color: #133090;
+	Text-align: center;
+	Letter-Spacing: 0px;
+	Line-Height: 15px;
+	Margin: 3px 2px 2px 2px;
+}
+	
+.OptionBoxText {
+	Font-Family: Arial, Verdana, Tahoma;
+	Font-Size: 8pt;
+	Font-Weight: normal;
+	Color: #707070;
+	Margin: 8px 8px 8px 8px;
+}
+
+.SmallButtons /* Used for site buttons */{
+	
+	font-family: Tahoma;
+	font-size: 8pt;
+    FONT-WEIGHT: normal;
+    LETTER-SPACING: 0pt;
+	background: #7DC83A;
+	border-bottom: 1px solid #104A7B;
+	border-right: 1px solid #104A7B;
+	border-left: 1px solid #AFC4D5;
+	border-top:1px solid #AFC4D5; 
+	color:#ffffff;
+	text-decoration:none;
+	cursor: hand
+	}
+
+.SmallGrayText{
+
+    FONT-SIZE: 8pt;
+    COLOR: gray;
+    FONT-FAMILY: Tahoma;
+    FONT-WEIGHT: normal;
+    LETTER-SPACING: 0pt;
+    TEXT-DECORATION: none;
+}
+
+.SmallGreenText{
+
+    FONT-SIZE: 8pt;
+    COLOR: green;
+    FONT-FAMILY: Tahoma;
+    FONT-WEIGHT: normal;
+    LETTER-SPACING: 0pt;
+    TEXT-DECORATION: none;
+}
+
+.SmallRedText{
+
+    FONT-SIZE: 8pt;
+    COLOR: red;
+    FONT-FAMILY: Tahoma;
+    FONT-WEIGHT: normal;
+    LETTER-SPACING: 0pt;
+    TEXT-DECORATION: none;
+}
+
+.TableText{
+
+    FONT-SIZE: 10pt;
+    COLOR: gray;
+    FONT-FAMILY: Tahoma;
+    FONT-WEIGHT: normal;
+    LETTER-SPACING: 0pt;
+    TEXT-DECORATION: none;
+}
+
+.head {
+	COLOR: #333333; FONT-FAMILY: verdana,arial,helvetica,sans-serif; FONT-SIZE: 14pt
+}

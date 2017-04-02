@@ -1,0 +1,298 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+.customPrimaryBtn {
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.customPrimaryBtn input[type="submit"] {
+    font-size: 11px !important;
+}
+
+.waves-input-wrapper {
+    font-family: "Roboto Slab", serif;
+    border-radius: 0px;
+}
+
+.waves-input-wrapper .waves-button-input {
+    font-family: "Roboto Slab", serif;
+    font-size: 14px !important;
+    padding-top: 8px;
+}
+
+.inline-block li {
+    display: inline-block;
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    min-height: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+}
+
+nav {
+    background-color: #3F51B5 !important;
+}
+
+.headerNavbar .logo {
+    padding-left: 50px;
+    font-size: 12px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.headerNavbar .headerMenuLinkContainer {
+    font-size: 12px;
+    margin-right: 40px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.adminFormWrapper {
+    padding: 0px !important;
+    position: absolute;
+    top: 50%;
+    margin-top: -170px;
+}
+
+.adminFormWrapper .formHead {
+    margin: 0px 0px 20px 0px;
+    background: #03A9F4;
+    padding: 20px 0px 20px 0px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 0px;
+    color: #fff;
+}
+
+.siteOwnerSettings {
+    margin-top: -220px;
+}
+
+.siteOwnerSettings .siteForm .row {
+    margin-bottom: 0px;
+    padding-right: 8%;
+}
+
+.siteOwnerSettings .siteForm .row input:not([type]),
+.siteOwnerSettings .siteForm .row input[type=text],
+.siteOwnerSettings .siteForm .row input[type=password],
+.siteOwnerSettings .siteForm .row input[type=email],
+.siteOwnerSettings .siteForm .row input[type=url],
+.siteOwnerSettings .siteForm .row input[type=time],
+.siteOwnerSettings .siteForm .row input[type=date],
+.siteOwnerSettings .siteForm .row input[type=datetime-local],
+.siteOwnerSettings .siteForm .row input[type=tel],
+.siteOwnerSettings .siteForm .row input[type=number],
+.siteOwnerSettings .siteForm .row input[type=search],
+.siteOwnerSettings .siteForm .row textarea.materialize-textarea {
+    margin-bottom: 0px;
+}
+
+.siteOwnerSettings .siteForm .row .siteCaptions {
+    margin-top: 32px !important;
+    padding-left: 70px;
+}
+
+.footerContainer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    z-index: 9999;
+}
+
+.footerContainer .col {
+    padding: 0px 50px;
+}
+
+.footerContainer .row {
+    margin-bottom: 0px;
+}
+
+footer.page-footer {
+    margin-top: 0px;
+    padding-top: 0px;
+    background-color: #3F51B5;
+}
+
+.footerRelative .footerContainer {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+}
+
+.adminAreaContainer .col {
+    margin-top: 50px;
+}
+
+.linkContentContainer {
+    font-size: 10px;
+}
+
+.linkContentContainer .btn {
+    padding: 0 1.5rem;
+    line-height: 30px;
+    height: 30px;
+}
+
+.linkContentContainer .input-field {
+    margin-top: 0px !important;
+}
+
+.contentContainer {
+    margin-top: -20px !important;
+    margin-bottom: 80px;
+}
+
+.tableLinkContainer {
+    margin-top: 30px;
+}
+
+.tableContainer {
+    font-size: 12px;
+}
+
+.tableContainer td,
+.tableContainer th {
+    padding: 6px 5px;
+    text-align: center;
+}
+
+.bottomLinkContainer .select-wrapper input.select-dropdown {
+    height: 2.5rem;
+    line-height: 2.5rem;
+}
+
+.bottomLinkContainer .dropdown-content li {
+    min-height: 0px;
+}
+
+.bottomLinkContainer .dropdown-content li>a,
+.bottomLinkContainer .dropdown-content li>span {
+    line-height: 20px !important;
+    padding: 5px 16px !important;
+}
+
+
+/* Chandan - 26March*/
+
+input[readonly] {
+    color: gray;
+}
+
+.statusMessage {
+    position: relative;
+    padding: 10px 0px;
+}
+
+
+/*.adminAreaContainer .col {margin-top: 100px;}*/
+
+.getDownload {
+    top: 40%;
+}
+
+.getDownload .btn {
+    width: 30% !important;
+    margin-right: 20px;
+}
+
+.smallFlag {
+    max-width: 60px;
+}
+
+.bigFlag {
+    width: 150px;
+}
+
+.input-field .error {
+    color: #ff4081 !important;
+    font-size: 0.8rem;
+    left: 0rem;
+    position: relative;
+    top: 0rem;
+    transform: translateY(0%);
+}
+
+.searchWrapper {
+    display: none;
+}
+
+.textCapital {
+    text-transform: capitalize;
+}
+
+.btn.active {
+    background-color: #2bbbad !important;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+
+/*Sankar 29 SEP 16*/
+
+.thumbnail {
+    max-width: 100px !important;
+    max-height: 100px !important;
+}
+
+.paddingZero {
+    padding: 0px !important;
+}
+
+.addEditButtonWrap {
+    margin: 10px;
+}
+
+.pafeHeadingContainer {
+    margin-bottom: 0px;
+}
+
+.pageHeading {
+    font-family: GillSans, Calibri, Trebuchet, sans-serif;
+    color: #2BBBAD;
+    color: #FF5252;
+}
+
+
+/*Sankar - 14 NOV 16*/
+
+.dropdown-content {
+    max-height: 300px !important;
+}
+
+.btn {
+    background-color: #3F51B5;
+}
+
+.selectedRow {
+    background: #81D4FA !important;
+}
+
+.rejected-status-color {
+    color: #E51c23;
+}
+
+.approved-status-color {
+    color: #4CAF50;
+}
+
+.pending-status-color {
+    color: #FF5722;
+}
+
+/*Sankar - MAR 17*/
+
+.message {
+    margin-top:30px;
+    color: green;
+}
+
+.highlight-row {
+    background: rgba(1,1,1,.2) !important;
+    transition: background 200ms ease-in;
+}

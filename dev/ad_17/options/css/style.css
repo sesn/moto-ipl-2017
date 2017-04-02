@@ -1,0 +1,119 @@
+
+.quick {
+	MARGIN-BOTTOM: 0px; MARGIN-LEFT: 10px; MARGIN-TOP: 0px
+}
+.quicktext {
+	COLOR: #515c78; FONT-FAMILY: Verdana,Arial,Helvetica,"sans serif"; FONT-SIZE: 11px; LINE-HEIGHT: 18px; TEXT-DECORATION: none
+}
+.quicktextl {
+	COLOR: #515c78; FONT-FAMILY: Verdana,Arial,Helvetica,"sans serif"; FONT-SIZE: 10px; LINE-HEIGHT: 18px; TEXT-DECORATION: none
+}
+.titlequick {
+	COLOR: #515c78; FONT-FAMILY: Verdana,Arial,Helvetica,"sans serif"; FONT-SIZE: 12px; LINE-HEIGHT: 18px; TEXT-DECORATION: none
+}
+.viewproject {
+	COLOR: #e36b07; FLOAT: right; FONT-FAMILY: Verdana, Arial, Helvetica, "sans serif"; FONT-SIZE: 11px; FONT-WEIGHT: bold; LINE-HEIGHT: normal; TEXT-DECORATION: none
+}
+.note {
+	COLOR: #aaaaaa; FONT-FAMILY: Verdana,Arial,Helvetica,"sans serif"; FONT-SIZE: 11px; LINE-HEIGHT: 18px; TEXT-DECORATION: none
+}
+.text {
+	COLOR: #4d4f4f; FONT-FAMILY: Verdana,Arial,Helvetica,"sans serif"; FONT-SIZE: 11px; LINE-HEIGHT: 18px; TEXT-DECORATION: none
+}
+#highlight {
+	BACKGROUND: #ffffcc
+}
+.textsmall {
+	COLOR: #2d2f2f; FONT-FAMILY: Verdana,Arial,Helvetica,"sans serif"; FONT-SIZE: 10px; TEXT-DECORATION: none
+}
+.textwhite {
+	COLOR: #ffffff; FONT-FAMILY: Verdana,Arial,Helvetica,"sans serif"; FONT-SIZE: 11px; LINE-HEIGHT: 18px; TEXT-DECORATION: none
+}
+.textwhitebig {
+	COLOR: #ffffff; FONT-FAMILY: Verdana,Arial,Helvetica,"sans serif"; FONT-SIZE: 12px; LINE-HEIGHT: 18px; TEXT-DECORATION: none
+}
+.textwhitesmall {
+	COLOR: #ffffff; FONT-FAMILY: Verdana,Arial,Helvetica,"sans serif"; FONT-SIZE: 10px; TEXT-DECORATION: none
+}
+.textportfolio {
+	COLOR: #4d4f4f; FONT-FAMILY: Verdana, Arial, Helvetica, "sans serif"; FONT-SIZE: 11px; LINE-HEIGHT: 16px; MARGIN-TOP: 0px; TEXT-ALIGN: justify
+}
+.textcontent {
+	COLOR: #4d4f4f; FONT-FAMILY: Verdana, Arial, Helvetica, "sans serif"; FONT-SIZE: 11px; LINE-HEIGHT: 16px; MARGIN-BOTTOM: 0px; MARGIN-LEFT: 15px; MARGIN-TOP: 0px; TEXT-ALIGN: justify; TEXT-DECORATION: none
+}
+.smallcontent {
+	COLOR: #4d4f4f; FONT-FAMILY: Verdana, Geneva, "sans serif"; FONT-SIZE: 10px; LINE-HEIGHT: 16px; MARGIN-LEFT: 15px; TEXT-ALIGN: justify; TEXT-INDENT: 0px
+}
+.textblack {
+	COLOR: #000000; FONT-FAMILY: Verdana,Arial,Helvetica,"sans serif"; FONT-SIZE: 11px; LINE-HEIGHT: 18px; TEXT-DECORATION: none
+}
+.linkorange {
+	COLOR: #e36b07; FONT-FAMILY: Verdana,Arial,Helvetica,"sans serif"; FONT-SIZE: 11px; MARGIN-TOP: 0px; TEXT-DECORATION: none
+}
+.textorange {
+	COLOR: #e36b07; FONT-FAMILY: Verdana,Arial,Helvetica,"sans serif"; FONT-SIZE: 11px; TEXT-DECORATION: none
+}
+.spaceout {
+	COLOR: #777777; FONT-FAMILY: Verdana, Geneva, "sans serif"; FONT-SIZE: 13px; FONT-WEIGHT: normal; LETTER-SPACING: 13px; LINE-HEIGHT: 17px; MARGIN-LEFT: 18px
+}
+.textheader {
+	COLOR: #68696a; FONT-FAMILY: Verdana,Arial,Helvetica,"sans serif"; FONT-SIZE: 12px; FONT-WEIGHT: bold; LINE-HEIGHT: 28px; TEXT-DECORATION: none
+}
+.copyright {
+	COLOR: #b4b6b6; FONT-FAMILY: Verdana,Arial,Helvetica,"sans serif"; FONT-SIZE: 10px; LINE-HEIGHT: 16px; TEXT-DECORATION: none
+}
+.table {
+	BORDER-BOTTOM: #d0d6e4 1px solid; BORDER-LEFT: 0px; BORDER-RIGHT: 0px; BORDER-TOP: 0px
+}
+.tableborder {
+	BORDER-BOTTOM: #777777 1px dotted; BORDER-LEFT: #777777 1px dotted; BORDER-RIGHT: #777777 1px dotted; BORDER-TOP: #777777 1px dotted
+}
+.textfield {
+	BORDER-BOTTOM: #777777 1px dotted; BORDER-LEFT: #777777 1px dotted; BORDER-RIGHT: #777777 1px dotted; BORDER-TOP: #777777 1px dotted
+}
+.spaceout {
+	COLOR: #777777; FONT-FAMILY: Verdana, Geneva, "sans serif"; FONT-SIZE: 13px; FONT-WEIGHT: normal; LETTER-SPACING: 13px; LINE-HEIGHT: 17px; MARGIN-LEFT: 18px
+}
+.small {
+	FONT-FAMILY: Verdana, Geneva, "sans serif"; FONT-SIZE: 10px; LINE-HEIGHT: 10px; TEXT-INDENT: 0px
+}
+.smallf {
+	FONT-FAMILY: Verdana, Geneva, "sans serif"; FONT-SIZE: 10px; LINE-HEIGHT: 13px; TEXT-INDENT: 0px
+}
+.small-indent {
+	FONT-FAMILY: Verdana, Geneva, "sans serif"; FONT-SIZE: 10px; LINE-HEIGHT: 10px; MARGIN-LEFT: 5px; TEXT-INDENT: 0px
+}
+.small-flushright {
+	FONT-FAMILY: Verdana, Geneva, "sans serif"; FONT-SIZE: 10px; LINE-HEIGHT: 10px; MARGIN-LEFT: 5px; TEXT-ALIGN: right; TEXT-INDENT: 0px
+}
+.small-flushleft {
+	FLOAT: left; FONT-FAMILY: Verdana, Geneva, "sans serif"; FONT-SIZE: 10px; LINE-HEIGHT: 13px; MARGIN-BOTTOM: 10px; TEXT-ALIGN: justify; TEXT-INDENT: 0px; WIDTH: 440px
+}
+.small-flushleftf {
+	FLOAT: left; FONT-FAMILY: Verdana, Geneva, "sans serif"; FONT-SIZE: 10px; LINE-HEIGHT: 13px; MARGIN-LEFT: 24px; TEXT-ALIGN: justify; TEXT-INDENT: 0px; WIDTH: 230px
+}
+.small-flushboth {
+	FLOAT: right; FONT-FAMILY: Verdana, Geneva, "sans serif"; FONT-SIZE: 10px; LINE-HEIGHT: 13px; TEXT-ALIGN: justify; TEXT-INDENT: 0px; WIDTH: 330px
+}
+.small-flushnarrow {
+	FLOAT: right; FONT-FAMILY: Verdana, Geneva, "sans serif"; FONT-SIZE: 10px; LINE-HEIGHT: 13px; MARGIN-LEFT: 15px; TEXT-ALIGN: justify; TEXT-INDENT: 0px
+}
+TD.glasses {
+	BACKGROUND-IMAGE: url(../images/glasses6.gif)
+}
+
+.portfolio {
+	BORDER-BOTTOM-COLOR: #ffffff; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-COLOR: #ffffff; BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-COLOR: #ffffff; BORDER-RIGHT-WIDTH: 0px; BORDER-TOP-COLOR: #ffffff; BORDER-TOP-WIDTH: 0px
+}
+.listp {
+	FONT-FAMILY: Verdana, Geneva, "sans serif"; FONT-SIZE: 10px; LINE-HEIGHT: 23px; LIST-STYLE: url(../images/pointer_list.gif) outside; MARGIN-LEFT: 64px
+}
+.list {
+	LINE-HEIGHT: 18px; LIST-STYLE: url(../images/pointer_list.gif) outside; MARGIN-LEFT: 64px
+}
+.trumbnail {
+	BORDER-BOTTOM-COLOR: #ffffff; BORDER-LEFT-COLOR: #ffffff; BORDER-RIGHT-COLOR: #ffffff; BORDER-TOP-COLOR: #ffffff; BORDER-TOP-STYLE: solid
+}
+.textExponent {
+	COLOR: #4d4f4f; FONT-FAMILY: Verdana, Arial, Helvetica, "sans serif"; FONT-SIZE: 11px; LINE-HEIGHT: 18px; OVERFLOW: auto; TEXT-DECORATION: none; TOP: 200px; VERTICAL-ALIGN: top; WIDTH: 200px
+}

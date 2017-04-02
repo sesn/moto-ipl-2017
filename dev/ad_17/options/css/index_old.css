@@ -1,0 +1,244 @@
+BODY {
+	MARGIN-LEFT: 0px; MARGIN-RIGHT: 0px; MARGIN-BOTTOM: 0px; MARGIN-TOP: 0px
+}
+.text {
+	FONT-FAMILY: verdana, arial, 'sans-serif'; FONT-SIZE: 8pt; MARGIN-LEFT: 10px; MARGIN-RIGHT: 10px
+}
+
+A.main {
+	COLOR: #ffffff; TEXT-DECORATION: none;
+}
+A.main:visited {
+	COLOR: #ffffff; TEXT-DECORATION: none;
+}
+A.main:hover {
+	BACKGROUND-COLOR:; COLOR: #D8E6F1
+}
+
+.heading {
+	COLOR: #666666; FONT-FAMILY: verdana, arial, 'sans-serif'; FONT-SIZE: 11px; FONT-WEIGHT: bold; LETTER-SPACING: 2px
+}
+.normal {
+	COLOR: #666666; FONT-FAMILY: verdana, arial, 'sans-serif'; FONT-SIZE: 11px
+}
+.small {
+	COLOR: black; 
+	FONT-FAMILY: verdana, arial, 'sans-serif'; 
+	FONT-SIZE: 7pt; 
+	LETTER-SPACING: 1px;
+
+}
+.ssmall {
+	COLOR: black; FONT-FAMILY: verdana, arial, 'sans-serif'; FONT-SIZE: 7pt; LETTER-SPACING: 1px
+}
+.white {
+	COLOR: white; FONT-FAMILY: verdana, arial, 'sans-serif'; FONT-SIZE: 9pt; LETTER-SPACING: 1px; MARGIN-TOP: 15px
+}
+.whitehead {
+	COLOR: white; FONT-FAMILY: verdana, arial, 'sans-serif'; FONT-SIZE: 10pt; FONT-WEIGHT: bold
+}
+.normalP {
+	COLOR: black; FONT-FAMILY: verdana, arial, 'sans-serif'; FONT-SIZE: 8pt; MARGIN: 2px 5px
+}
+.normalPW {
+	COLOR: white; FONT-FAMILY: verdana, arial, 'sans-serif'; FONT-SIZE: 8pt; MARGIN: 2px 5px
+}
+.dark_black_h4 {
+	FONT-FAMILY: verdana, arial, sans-serif; 
+	FONT-SIZE: 11px; 
+	FONT-WEIGHT: bold; 
+	LINE-HEIGHT: 13px; 
+	MARGIN-TOP: 3px; 
+	MARGIN-BOTTOM: 3px; 
+	MARGIN-LEFT: 10px
+}
+.dark_white_h4 {
+	COLOR: white; FONT-FAMILY: verdana, arial, sans-serif; FONT-SIZE: 11px; FONT-WEIGHT: normal; LINE-HEIGHT: 13px; MARGIN-BOTTOM: 3px; MARGIN-LEFT: 15px; MARGIN-TOP: 3px
+}
+.dark_white2_h4 {
+	COLOR: #1c0655; FONT-FAMILY: verdana, arial, sans-serif; FONT-SIZE: 11px; FONT-WEIGHT: bold; LINE-HEIGHT: 13px; MARGIN-BOTTOM: 5px; MARGIN-LEFT: 10px; MARGIN-TOP: 5px
+}
+.lighth4 {
+	FONT-FAMILY: verdana, arial, sans-serif; 
+	FONT-SIZE: 11px; 
+	FONT-WEIGHT: normal; 
+	LINE-HEIGHT: 13px; 
+	MARGIN-BOTTOM: 5px; 
+	MARGIN-LEFT: 10px; 
+	MARGIN-RIGHT: 5px; 
+	Color: #808080;
+}
+.leftMenu {
+	FONT-FAMILY: verdana, arial, sans-serif; 
+	FONT-SIZE: 12px; 
+	FONT-WEIGHT: normal; 
+	LINE-HEIGHT: 13px; 
+	MARGIN-BOTTOM: 3px; 
+	MARGIN-LEFT: 5px; 
+	MARGIN-TOP: 3px
+}
+.lighth5 {
+	FONT-FAMILY: tahoma, verdana, arial, sans-serif; 
+	FONT-SIZE: 9px; 
+	FONT-WEIGHT: normal; 	
+	LINE-HEIGHT: 13px; 
+	MARGIN-BOTTOM: 3px; 
+	MARGIN-LEFT: 10px; 
+	MARGIN-TOP: 3px
+}
+.lighth6 {
+	FONT-FAMILY: arial, verdana, sans-serif; 
+	FONT-SIZE: 9px; 
+	FONT-WEIGHT: normal; 		
+	LINE-HEIGHT: 13px; 
+	MARGIN-BOTTOM: 2px; 
+	MARGIN-LEFT: 5px; 
+	MARGIN-TOP: 2px
+}
+.lighth7 {
+	FONT-FAMILY: arial, verdana, sans-serif; 
+	FONT-SIZE: 11px; 
+	FONT-WEIGHT: normal; 	LINE-HEIGHT: 18px; 
+	MARGIN-BOTTOM: 3px; 
+	MARGIN-LEFT: 10px; 
+	MARGIN-TOP: 3px
+}
+.lighth8 {
+	FONT-FAMILY: arial, verdana, sans-serif; 
+	FONT-SIZE: 11px; 
+	FONT-WEIGHT: normal; 	LINE-HEIGHT: 13px; 
+	MARGIN-BOTTOM: 6px; 
+	MARGIN-LEFT: 10px; 
+	MARGIN-TOP: 6px
+}
+.lighth9 {
+	FONT-FAMILY: arial, verdana, sans-serif; 
+	FONT-SIZE: 11px; 
+	FONT-WEIGHT: normal; 	LINE-HEIGHT: 15px; 
+	MARGIN-BOTTOM: 5px; 
+	MARGIN-LEFT: 5px; 
+	MARGIN-TOP: 5px
+}
+.lighth10 {
+	FONT-FAMILY: arial, verdana, sans-serif; 
+	FONT-SIZE: 11px; 
+	FONT-WEIGHT: normal; 	LINE-HEIGHT: 13px; 
+	MARGIN-BOTTOM: 3px; 
+	MARGIN-LEFT: 10px; 
+	MARGIN-TOP: 1px
+}
+.lighth11 {
+	FONT-FAMILY: arial, verdana, sans-serif; 
+	FONT-SIZE: 11px; 
+	FONT-WEIGHT: normal; 	LINE-HEIGHT: 13px; 
+	MARGIN-BOTTOM: 9px; 
+	MARGIN-LEFT: 8px; 
+	MARGIN-TOP: 9px
+}
+.text2 {
+	FONT-FAMILY: verdana, arial, 'sans-serif'; 
+	FONT-SIZE: 8pt; 
+	FONT-WEIGHT: lighter;
+	MARGIN-LEFT: 10px; 
+	MARGIN-TOP: 10px;
+	MARGIN-BOTTOM: 10px
+}
+.closing {
+	COLOR: #999999; FONT-SIZE: 8pt
+}
+
+.tdBG{  background-image: url('../images/left_box_bg.jpg'); background-repeat: no-repeat; background-attachment: fixed
+}
+
+.search {
+	COLOR: #000000; FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 10px; FONT-WEIGHT: normal; LETTER-SPACING: 2px; MARGIN: 1px 2px 1px; MARGIN-LEFT: 10px; TEXT-DECORATION: none
+}
+.nrm01 {
+	FONT-SIZE: 11px; FONT-FAMILY: Arial, Helvetica, sans-serif; fontsize: 11px; border: 1px solid #000000;background-color: #f0f0f0;
+}
+.tbl_border {
+	border-style: solid; border-width: 1; bordercolor=#5B5BA4; background-color: #E4E4F8
+}
+.top_navi {
+	VERTICAL-ALIGN: middle; PADDING-TOP: 20px; TEXT-ALIGN: center
+}
+
+.A.bot {
+	COLOR: #000000; TEXT-DECORATION: underline
+
+}
+.A.bot:hover {
+	COLOR: #3f89c3; TEXT-DECORATION: underline
+}
+.A.top {
+	COLOR: #000000; TEXT-DECORATION: underline
+
+}
+.A.top:hover {
+	COLOR: red; TEXT-DECORATION: none
+}
+
+.combobox1
+{
+	font-family: arial; 
+	font-size: 8pt; 
+	color: #000000;
+	font-weight: normal; 
+	border: 1px #000000 solid;
+	background-color: #f0f0f0;
+; width: 100px
+}
+
+.combobox2
+{
+	font-family: arial; 
+	font-size: 8pt; 
+	color: #000000;
+	font-weight: normal; 
+	border: 1px #000000 solid;
+	background-color: #f0f0f0;
+; width: 125px
+}
+
+.combobox22
+{
+	font-family: arial; 
+	font-size: 8pt; 
+	color: #000000;
+	font-weight: normal; 
+	border: 1px #000000 solid;
+	background-color: #f0f0f0;
+; width: 175px
+}
+
+
+.BoxRedHeading{
+	Font-Family: Arial, Verdana, Tahoma;
+	Font-Size: 8pt;
+	Font-Weight: bold;
+	Color: #FFFFFF;
+	Text-align: center;
+	Letter-Spacing: 1px;
+	Line-Height: 15px;
+	Margin: 3px 2px 2px 5px;
+}
+
+.BoxBlueHeading{
+	Font-Family: Arial, Verdana, Tahoma;
+	Font-Size: 8pt;
+	Font-Weight: bold;
+	Color: #133090;
+	Text-align: center;
+	Letter-Spacing: 0px;
+	Line-Height: 15px;
+	Margin: 3px 2px 2px 2px;
+}
+.HightLightBox{
+	Font-Family: Arial, Verdana, Tahoma;
+	Font-Size: 12px;
+	Color: #434343;
+	}
+
+.head {
+	COLOR: #333333; FONT-FAMILY: verdana,arial,helvetica,sans-serif; FONT-SIZE: 14pt
+}

@@ -1,0 +1,96 @@
+BODY {
+	BACKGROUND-COLOR: #ebebeb; MARGIN: 0px
+}
+.FeatureCopy {
+	COLOR: #333333; FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 10px; FONT-STYLE: normal; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+.FormField {
+	BACKGROUND-COLOR: #cccccc; BORDER-BOTTOM: #999999 1px solid; BORDER-LEFT: #999999 1px solid; BORDER-RIGHT: #999999 1px solid; BORDER-TOP: #999999 1px solid; COLOR: #333333; FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 12px; FONT-STYLE: normal; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+.FormFieldWhite {
+	BACKGROUND-COLOR: #ffffff; BORDER-BOTTOM: #999999 1px solid; BORDER-LEFT: #999999 1px solid; BORDER-RIGHT: #999999 1px solid; BORDER-TOP: #999999 1px solid; COLOR: #333333; FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 12px; FONT-STYLE: normal; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+.Content {
+	COLOR: #333333; FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 12px; FONT-STYLE: normal; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+.ContentBold {
+	COLOR: #333333; FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 12px; FONT-STYLE: normal; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.ContentBoldItalic {
+	COLOR: #333333; FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 12px; FONT-STYLE: italic; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.ContentItalic {
+	COLOR: #333333; FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 12px; FONT-STYLE: italic; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+.ContentBoldGreen {
+	COLOR: #336564; FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 12px; FONT-STYLE: normal; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.MenuHyperlink {
+	COLOR: #346663; FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 10px; FONT-STYLE: normal; FONT-WEIGHT: normal; TEXT-DECORATION: underline
+}
+.MenuItem {
+	COLOR: #346663; FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 10px; FONT-STYLE: normal; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+A.ContentHyperlink {
+	COLOR: #336564; FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 12px; FONT-STYLE: normal; FONT-WEIGHT: normal; TEXT-DECORATION: underline
+}
+A.ContentHyperlink:hover {
+	COLOR: #99cccc; TEXT-DECORATION: none
+}
+A.ContentTableHyperlink {
+	COLOR: #336564; FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 12px; FONT-STYLE: normal; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.ContentTableHyperlink:hover {
+	COLOR: #99cccc; TEXT-DECORATION: underline
+}
+A.TableContentHyperlink {
+	COLOR: #336564; FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 10px; FONT-STYLE: normal; FONT-WEIGHT: normal; TEXT-DECORATION: underline
+}
+A.TableContentHyperlink:hover {
+	COLOR: #99cccc; TEXT-DECORATION: none
+}
+.TableHeaderWhite {
+	COLOR: #ffffff; FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 12px; FONT-STYLE: normal; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+.TableHeaderWhiteBold {
+	COLOR: #ffffff; FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 12px; FONT-STYLE: normal; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.TableContent {
+	COLOR: #333333; FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 10px; FONT-STYLE: normal; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+.TableContentHeaderWhite {
+	COLOR: #ffffff; FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 10px; FONT-STYLE: normal; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+.TableContentHeaderWhiteBold {
+	COLOR: #ffffff; FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 11px; FONT-STYLE: normal; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.TableContentHeaderBlackBold {
+	COLOR: #000000; FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 11px; FONT-STYLE: normal; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.LoginFailedMessage {
+	COLOR: #000000; FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 12px; FONT-STYLE: normal; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+.LoginFailedMessageBlackBold {
+	COLOR: #000000; FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 12px; FONT-STYLE: normal; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.LoginFailedMessageFromHomePage {
+	COLOR: #000000; FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 10px; FONT-STYLE: normal; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+.CellOver {
+	BACKGROUND-COLOR: #efefef; COLOR: #000000; FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 10px; FONT-STYLE: normal; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+.CellOut {
+	BACKGROUND-COLOR: #ffffff; COLOR: #000000; FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 10px; FONT-STYLE: normal; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+.ulArrow {
+	LIST-STYLE: url(../images/interface/arrow.jpg)
+}
+.OddRow {
+	BACKGROUND-COLOR: #e2e2e2
+}
+.EvenRow {
+	BACKGROUND-COLOR: #ffffff
+}
+
+
+

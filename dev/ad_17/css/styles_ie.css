@@ -1,0 +1,71 @@
+
+.bodyText {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666666;
+	text-decoration: none;
+}
+a.bodytext:hover
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: black;
+	text-decoration: underline;
+}
+
+.link {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666666;
+	text-decoration: none;
+
+}
+
+.SmallBlackText
+{
+    FONT-SIZE: 9pt;
+    COLOR: #000000;
+    FONT-FAMILY: Arial;
+    FONT-WEIGHT: normal;
+    LINE-HEIGHT: 10pt;
+    TEXT-DECORATION: none;
+}
+
+.Header
+{
+    FONT-SIZE: 10pt;COLOR: #000000;FONT-FAMILY: Arial;FONT-WEIGHT: bold;TEXT-DECORATION: none;
+}
+
+.Header:hover
+{
+    FONT-SIZE: 10pt;
+    COLOR: darkblue;
+    FONT-FAMILY: Arial;
+    FONT-WEIGHT: bold;
+    TEXT-DECORATION: none;
+}
+
+.toplinks{  font-family: Arial; font-size: 8pt; LINE-HEIGHT: 12pt; font-weight:normal ; color: black; text-decoration: none}
+a.toplinks:Hover{  font-family: Arial; font-size: 8pt; LINE-HEIGHT: 12pt; font-weight:normal ; color: red; text-decoration: none}
+
+.mainorangeheader{  font-family: Arial; font-size: 10pt; font-weight:bold ; color: #2c56ad; text-decoration: none}
+
+.smalltext{  font-family: Arial; font-size: 8pt; font-weight:normal ; color: #333300; text-decoration: none}
+
+.heading{  font-family: Arial; font-size: 10pt; font-weight:bold ; color: #173B6D; text-decoration: none}
+.tblheading{  font-family: Arial; font-size: 9pt; font-weight:bold ; color: #000000; text-decoration: none}
+
+.subheading{  font-family: Arial; font-size: 9pt; font-weight:bold ; color: #173B6D; text-decoration: none}
+
+/* Font formatting */
+.normal  	{color: #101010; font-family: Arial; font-size: 11px; font-weight: normal; text-decoration: none;}
+.darkblue	{color: #2c56ad; font-family: Arial; font-size: 12px; font-weight: bold; text-decoration: none;}
+
+
+.BdrgrnT{border-Top:1px solid #B5CCFB;}
+.BdrgrnR{border-Right:1px solid #B5CCFB;}
+.BdrgrnB{border-Bottom:1px solid #B5CCFB;}
+.BdrgrnL{border-Left:1px solid #B5CCFB;}
+
+
+
