@@ -8,7 +8,7 @@ checkLogin($_SESSION['admin_logged_in'], $admin_path);
 $date=date("Y-m-d H:i:s");
 
 //Table
-$table_name = 'tbl_questions';
+$table_name = 'tbl_form_entry';
 
 if($_POST["ID"] == "" && trim($_GET["status"])=="" ) {
 	$_SESSION['message'] = 'Question is not selected';

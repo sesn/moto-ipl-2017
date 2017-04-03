@@ -27,47 +27,29 @@ checkLogin($_SESSION['admin_logged_in'], $admin_path);
 
       <div class="col l3 m4 s12">
           <div class="center promo promo-example">
-            <?php $link="question_manager/index.php?show=View_All"; ?>
+            <?php $link="form_manager/"; ?>
             <a href="<?php echo $link; ?>"><i class="material-icons large">receipt</i></a>
-            <p class="promo-caption"><a href="<?php echo $link; ?>">Question Manager</a></p>
-            <p class="light center">View Questions here.</p>
+            <p class="promo-caption"><a href="<?php echo $link; ?>">Form Manager</a></p>
+            <p class="light center">View form entries here.</p>
           </div>
         </div>  
 
-  		<!--  <div class="col l3 m4 s12">
-          <div class="center promo promo-example">
-            <?php $link="answer_manager/index.php?show=View_All"; ?>
-            <a href="<?php echo $link; ?>"><i class="material-icons large">receipt</i></a>
-            <p class="promo-caption"><a href="<?php echo $link; ?>">Answer Manager</a></p>
-            <p class="light center">View Answer here.</p>
-          </div>
-        </div>  --> 
-
         <div class="col l3 m4 s12">
           <div class="center promo promo-example">
-            <?php $link="campaign_manager/index.php"; ?>
+            <?php $link="campaign_manager/"; ?>
             <a href="<?php echo $link; ?>"><i class="material-icons large">receipt</i></a>
             <p class="promo-caption"><a href="<?php echo $link; ?>">Campaign Manager</a></p>
             <p class="light center">View campaign control settings here.</p>
           </div>
         </div> 
 
-         <div class="col l3 m4 s12">
-          <div class="center promo promo-example">
-            <?php $link="winner_manager/index.php"; ?>
-            <a href="<?php echo $link; ?>"><i class="material-icons large">receipt</i></a>
-            <p class="promo-caption"><a href="<?php echo $link; ?>">Winner Manager</a></p>
-            <p class="light center"> View users here.</p>
-          </div>
-        </div> 
-
         
-        <!-- <?php  if($_SESSION['admin_permission'] == 'write') { ?>
+        <?php  if($_SESSION['admin_permission'] == 'write') { ?>
         <div class="col l3 m4 s12">
           <div class="center promo promo-example">
             <?php $link="user_manager/index.php?show=View_All"; ?>
             <a href="<?php echo $link;?>"><i class="material-icons large">camera_enhance</i></a>
-            <p class="promo-caption"><a href="<?php echo $link; ?>">User1 Manager</a></p>
+            <p class="promo-caption"><a href="<?php echo $link; ?>">User Manager</a></p>
             <p class="light center">Add/Remove Users here.</p>
           </div>
         </div> 
@@ -80,7 +62,7 @@ checkLogin($_SESSION['admin_logged_in'], $admin_path);
             <p class="promo-caption"><a href="<?php echo $link; ?>">Site Owner settings</a></p>
             <p class="light center">Edit site owner settings.</p>
           </div>
-        </div> -->
+        </div> 
 
 
       </div>

@@ -296,3 +296,29 @@ input[readonly] {
     background: rgba(1,1,1,.2) !important;
     transition: background 200ms ease-in;
 }
+
+
+/*Redesigning*/
+nav { background: #fff !important; padding: 10px 0px; height: auto; }
+nav a, nav ul a { color: #222c30; text-transform: uppercase; font-weight: bold; font-size: 14px; letter-spacing: 1px;  }
+nav ul a:hover { color: #00acc7; background: none; }
+.logo img {vertical-align: middle; margin-right: 20px; width: 35px; }
+nav .nav-wrapper { height: auto; }
+.headerNavbar .headerMenuLinkContainer {
+    z-index: 2;
+}
+.pageHeading {
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    margin-left: -150px;
+    color: #2BBBAD;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-family: "Roboto", sans-serif;
+}
+.btn {
+    background: #0090a6;
+}

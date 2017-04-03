@@ -7,10 +7,10 @@ checkLogin($_SESSION['admin_logged_in'], $admin_path);
 
 $db = new db;
 
-$page_heading="Question Manager";
+$page_heading="Form Manager";
 	
 //Table
-$table_name = 'tbl_questions'; 
+$table_name = 'tbl_form_entry'; 
 
 //set the show variable
 if(isset($_REQUEST['show'])) {
@@ -65,39 +65,9 @@ if(isset($_REQUEST['page'])) {
         Display all data when the show variable is one of these values : activated, deactivated or view_all
     */
     if($show == $view_all || $show == $activated || $show == $deactivated ): ?>
-    <form action="<?php print $_SERVER['PHP_SELF'];?>" method="post" name="frmList" id="frmList">
-        <!-- contentLink -->
-        <div class="row linkContentContainer">
-            <div class="row pafeHeadingContainer">
-                <div class="col s12">
-                    <h5 class="pageHeading"><?php echo $page_heading; ?></h5>
-                </div>
-            </div>
-            <div class="col s12">
-                <div class="col s6">
-                    <ul class="inline-block">
-                        <li><a class="waves-effect waves-light btn" href="index.php?show=view_all">View All</a></li>
-                        <li><a class="waves-effect waves-light btn" href="index.php?show=deactivated">Deactivated</a></li>
-                        <li><a class="waves-effect waves-light btn" href="index.php?show=activated">Acitvated</a></li>
-                        <li><a class="waves-effect waves-light btn" href="index.php?show=Add">Add new</a></li>
-                    </ul>
-                </div>
-                <!-- search-->
-                <div class="col s6">
-                    <div class="input-field col s4 offset-s4">
-                        <input id="searchName" name="searchName" type="text" class="validate">
-                        <label for="searchName">Search here</label>
-                    </div>
-                    <div class="col s3" style="padding-top: 10px;">
-                        <a class="waves-effect waves-light btn" href="index.php?show=view_all" id="searchBtn" onclick=" return searchFn()">Search</a>
-                    </div>
-                </div>
-                <!-- .search-->
-            </div>
-        </div>
-        <!-- .contentLink -->
 
-        <!-- -->
+    <form action="<?php print $_SERVER['PHP_SELF'];?>" method="post" name="frmList" id="frmList">
+
         <?php 
 
             /**
@@ -111,17 +81,17 @@ if(isset($_REQUEST['page'])) {
             Conditional Query for Search 
             */
             if(isset($_REQUEST['search']) && $db->escape(trim($_REQUEST['search']))!='') {
-                $question_name= $db->escape(trim($_REQUEST['search']));
+                $search = $db->escape(trim($_REQUEST['search']));
 
                 switch($show) {
                     case $activated:
-                        $where = " WHERE status = 'Y' and question_text like '%$question_name%' ";
+                        $where = " WHERE status = '1' and applicant_name like '%$search%' ";
                         break;
                     case $deactivated:
-                        $where = " WHERE status = 'N' and question_text like '%$question_name%' ";
+                        $where = " WHERE status = '0' and applicant_name like '%$search%' ";
                         break;
                     default:
-                        $where = " WHERE question_text like '%$question_name%' ";
+                        $where = " WHERE applicant_name like '%$search%' ";
                         break;
                 }
             } 
@@ -131,10 +101,10 @@ if(isset($_REQUEST['page'])) {
             else {
                 switch($show) {
                     case $activated:
-                        $where = " WHERE status = 'Y'";
+                        $where = " WHERE status = '1'";
                         break;
                     case $deactivated:
-                        $where = " WHERE status = 'N'";
+                        $where = " WHERE status = '0'";
                         break;
                     default:
                         $where = "";
@@ -155,15 +125,54 @@ if(isset($_REQUEST['page'])) {
             $result_count = $page * $page_size - $page_size;
 
         ?>
+        <!-- contentLink -->
+        <div class="row linkContentContainer">
+            <div class="row pafeHeadingContainer">
+                <div class="col s12">
+                    <h5 class="pageHeading"><?php echo $page_heading; ?></h5>
+                </div>
+            </div>
+            <div class="col s12">
+                <div class="col s6">
+                    <ul class="inline-block">
+                        <li><a class="waves-effect waves-light btn" href="index.php?show=view_all">View All (<?php echo $total_records; ?>)</a></li>
+                        <li><a class="waves-effect waves-light btn" href="index.php?show=activated">Activated</a></li>
+                        <li><a class="waves-effect waves-light btn" href="index.php?show=deactivated">Deactivated</a></li>
+                    </ul>
+                </div>
+                <!-- search-->
+                <div class="col s6">
+                    <div class="input-field col s4 offset-s4">
+                        <input id="searchName" name="searchName" type="text" class="validate">
+                        <label for="searchName">Search here</label>
+                    </div>
+                    <div class="col s3" style="padding-top: 10px;">
+                        <a class="waves-effect waves-light btn" href="index.php?show=view_all" id="searchBtn" onclick=" return searchFn()">Search</a>
+                    </div>
+                </div>
+                <!-- .search-->
+            </div>
+        </div>
+        <!-- .contentLink -->
+
+        <!-- -->
+        
         <div class="row contentContainer">
             <div class="col s12">
                 <table class="striped tableContainer">
                     <thead>
                         <th>No.</th>
-                        <th>Question Text</th>
-                        <th>Question Class</th>
-                        <!-- <th>Question Image</th> -->
-                        <th>Question Color Code</th>
+                        <th>Applicant name</th>
+                        <th>Gender</th>
+                        <th>DOB</th>
+                        <th>Shirt Size</th>
+                        <th>Child Chance</th>
+                        <th>Pune Different</th>
+                        <th>Parent name</th>
+                        <th>Parent Email</th>
+                        <th>Parent Mobile</th>
+                        <th>Parent Address</th>
+                        <th>Home Match</th>
                         <th>Created</th>
                         <th>Modified</th>
                         <th>Status</th>
@@ -174,23 +183,26 @@ if(isset($_REQUEST['page'])) {
                     </thead>
 
                     <tbody>
-                        <?php while($result = $result_member->fetch_assoc()): ?>
+                        <?php while($result = $result_member->fetch_assoc()):
+                        $result_count++; 
+                        ?>
                         <tr class="custom-row">
                         <td><?php echo $result_count; ?></td>
-                        <td><a href="?show=edit&id=<?php echo $result['id']; ?>"><?php echo $result['question_text']; ?></a></td>
-                        <td><?php echo $result['question_class']; ?></td>
-                        <!-- <td>
-                            <?php if($result['question_image']) { ?>
-                            <a href="<?php echo $media_path.$result['question_image']; ?>" target="_blank">
-                                <img src="<?php echo $media_path.$result['question_image'];?>" alt="<?php echo $result['question_text'];?>" style="width: 100px; height: 40px;">
-                            </a>
-                            <?php } ?>
-                        </td> -->
-                        <td><?php echo $result['question_bg_color']; ?></td>
+                        <td><a href="?show=edit&id=<?php echo $result['id']; ?>"><?php echo $result['applicant_name']; ?></a></td>
+                        <td><?php echo $result['gender']; ?></td>
+                        <td><?php echo $result['dob']; ?></td>
+                        <td><?php echo $result['shirt_size']; ?></td>
+                        <td><?php echo $result['child_chance']; ?></td>
+                        <td><?php echo $result['pune_different']; ?></td>
+                        <td><?php echo $result['parent_name']; ?></td>
+                        <td><?php echo $result['parent_email']; ?></td>
+                        <td><?php echo $result['parent_mobile']; ?></td>
+                        <td><?php echo $result['parent_address']; ?></td>
+                        <td><?php echo $result['home_match']; ?></td>
                         <td><?php echo $result['created_at']; ?></td>
                         <td><?php echo $result['modified_at']; ?></td>
                         <td><?php 
-                            echo ($result['status'] == 'Y') ? 'Active' : ( ($result['status'] == 'N') ? 'Inactive': 'Neither active or deactivate' );
+                            echo ($result['status'] == '1') ? 'Active' : ( ($result['status'] == '0') ? 'Inactive': 'Neither active or deactivate' );
                             ?>
                         </td>
                         <td>
@@ -198,7 +210,7 @@ if(isset($_REQUEST['page'])) {
                         <label for="ID<?php print $result_count;?>"></label>
                         </td>
                         </tr>
-                        <?php $result_count++; endwhile; ?>
+                        <?php endwhile; ?>
                     </tbody>
                 </table>
             </div>
@@ -270,232 +282,6 @@ if(isset($_REQUEST['page'])) {
          <?php if($total_records ==0) { echo "<div class='row' style='margin-top: -60px;'><div class='col s12'>No Records available</div></div>"; } ?>
          
     </form>
-    <?php endif; ?>
-
-
-    <?php 
-    /**
-     * Add functionality
-     * @var [type]
-     */
-    if($show == 'add'):
-    ?>
-    <div class="row">
-        <div class="col s12 offset-s1">
-            <div class="col s10 card-panel adminFormWrapper siteOwnerSettings">
-                <div class="col s12 card-panel center-align formHead">Add New Question</div>
-
-                <form action="save_register.php" enctype="multipart/form-data" method="post" class="siteForm" id="teamForm" name="teamForm">
-                    <div class="row">
-                        <div class="col s4 siteCaptions">Question Name</div>
-                        <div class="input-field col s8">
-                            <input id="questionText" name="questionText" type="text" class="textbox" required>
-                            <label for="questionText">Enter the name</label>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col s4 siteCaptions">Specific Question Class</div>
-                        <div class="input-field col s8">
-                            <input id="questionClass" name="questionClass" type="text" class="textbox" required>
-                            <label for="questionClass">Enter the class name</label>
-                        </div>
-                    </div>
-
-                    <!-- <div class="row">
-                        <div class="col s4 siteCaptions">Upload</div>
-                        <div class="file-field col s8 input-field paddingZero">
-                                <div class="col s10 paddingZero">
-                                    <div class="file-path-wrapper">
-                                        <input class="file-path validate" accept="image/*" type="text" placeholder="Upload question background image">
-                                    </div>
-                                </div>
-                                <div class="col s2">
-                                    <div class="btn" style="width: auto !important;">
-                                        <span>File</span>
-                                        <input type="file" name="questionImage">
-                                    </div>
-                                </div>
-                          </div>
-                    </div> -->
-
-                    <div class="row">
-                        <div class="col s4 siteCaptions">Question Bg Color <span style="color: green;">(HEX FORMAT)</span></div>
-                        <div class="input-field col s8">
-                            <input id="questionBgColor" name="questionBgColor" type="text" class="textbox" required>
-                            <label for="questionBgColor">Enter the color code</label>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col s4 siteCaptions">Question Type</div>
-                        <div class="input-field col s8">
-                            <p>
-                              <input name="questionType" type="radio" id="normal" value="0" checked/>
-                              <label for="normal">Normal</label>
-                              
-                                
-                              <input name="questionType" type="radio" id="master" value="1" />
-                              <label for="master">Master</label>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col s4 siteCaptions"></div>
-                
-                        <div class="addEditButtonWrap">
-                            <div class="row">
-                                <div class="col s2 input-field">
-                                    <button class="btn waves-effect waves-light" type="submit" name="Submit">Add</button>
-                                </div>
-                                <div class="col s2 input-field">
-                                     <a class="waves-effect waves-light btn text-center small" href="index.php">Back</a>
-                                </div>
-
-                                <?php 
-                                    if (isset($_SESSION["Message"]) && $_SESSION["Message"] != "" ) { ?>
-                                        <div class="statusMessage">
-                                            <div class="col s3 input-field">
-                                                <font color="green">
-                                                    <?php print $_SESSION["Message"]; $_SESSION["Message"]=""; ?>   
-                                               </font> 
-                                            </div>
-                                        </div>
-                                    <?php } 
-                                ?>                                
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-    <?php endif; ?>
-
-    <?php 
-    /**
-     * Edit functionality
-     */
-    if($show == 'edit' && isset($_REQUEST['id']) && $_REQUEST['id'] != ''):
-        $id = $db->escape(trim($_REQUEST['id']));
-
-        $result_fetch = $db->select("SELECT * FROM {$table_name} WHERE id = {$id}");
-        $result = $result_fetch->fetch_object();
-
-        $_SESSION['question_id'] = $result->id;
-
-    ?>
-    <div class="row">
-        <div class="col s12 offset-s1">
-            <div class="col s10 card-panel adminFormWrapper siteOwnerSettings">
-                <div class="col s12 card-panel center-align formHead">Add New Question</div>
-
-                <form action="edit_detail.php" enctype="multipart/form-data" method="post" class="siteForm" id="teamEditForm" name="teamEditForm">
-                    <div class="row">
-                        <div class="col s4 siteCaptions">Question Name</div>
-                        <div class="input-field col s8">
-                            <input id="questionText" name="questionText" type="text" class="textbox" required value="<?php echo $result->question_text; ?>">
-                            <!-- <label for="questionText">Enter the name</label> -->
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col s4 siteCaptions">Specific Question Class</div>
-                        <div class="input-field col s8">
-                            <input id="questionClass" name="questionClass" type="text" class="textbox" required value="<?php echo $result->question_class; ?>">
-                            <!-- <label for="questionClass">Enter the class name</label> -->
-                        </div>
-                    </div>
-
-
-                    <div class="row">
-                        <div class="col s4 siteCaptions">Question Bg Color <span style="color: green;">(HEX FORMAT)</span></div>
-                        <div class="input-field col s8">
-                            <input id="questionBgColor" name="questionBgColor" type="text" class="textbox" required value="<?php echo $result->question_bg_color; ?>">
-                            <!-- <label for="questionBgColor">Enter the color code</label> -->
-                        </div>
-                    </div>
-
-                   <!--  <div class="row">
-                        <div class="col s4 siteCaptions">Current Image</div>
-                        <div class="col s8">
-                            <div class="input-field col s8">
-                                <?php 
-                                    if($result->question_image == '' || $result->question_image == NULL) {
-                                        echo '<div style="padding-top: 10px; color: red;">None</div>';
-                                    } else {
-                                        ?>
-                                            <a href="<?php echo $media_path.$result->question_image;?>" target="_blank"><img src="<?php echo $media_path.$result->question_image;?>" alt="" class=" responsive-img thumbnail"></a>
-                                        <?php
-                                    }
-                                ?>
-                            </div>
-                        </div>
-                    </div>
-
-                   <div class="row">
-                        <div class="col s4 siteCaptions">Upload</div>
-                        <div class="file-field col s8 input-field paddingZero">
-                                <div class="col s10 paddingZero">
-                                    <div class="file-path-wrapper">
-                                        <input class="file-path validate" accept="image/*" type="text" placeholder="Upload question background image">
-                                    </div>
-                                </div>
-                                <div class="col s2">
-                                    <div class="btn" style="width: auto !important;">
-                                        <span>File</span>
-                                        <input type="file" name="questionImage">
-                                    </div>
-                                </div>
-                          </div>
-                    </div> -->
-
-                    <div class="row">
-                        <div class="col s4 siteCaptions">Question Type</div>
-                        <div class="input-field col s8">
-                            <p>
-                              <input name="questionType" type="radio" id="normal" value="0" <?php echo ($result->question_type) ? '' : 'checked'; ?> />
-                              <label for="normal">Normal</label>
-                              
-                                
-                              <input name="questionType" type="radio" id="master" value="1" <?php echo ($result->question_type) ? 'checked' : ''; ?> />
-                              <label for="master">Master</label>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col s4 siteCaptions"></div>
-                
-                        <div class="addEditButtonWrap">
-                            <div class="row">
-                                <div class="col s2 input-field">
-                                    <button class="btn waves-effect waves-light" type="submit" name="Submit">Update</button>
-                                </div>
-                                <div class="col s2 input-field">
-                                     <a class="waves-effect waves-light btn text-center small" href="index.php">Back</a>
-                                </div>
-
-                                <?php 
-                                    if (isset($_SESSION["Message"]) && $_SESSION["Message"] != "" ) { ?>
-                                        <div class="statusMessage">
-                                            <div class="col s3 input-field">
-                                                <font color="green">
-                                                    <?php print $_SESSION["Message"]; $_SESSION["Message"]=""; ?>   
-                                               </font> 
-                                            </div>
-                                        </div>
-                                    <?php } 
-                                ?>                                
-                            </div>
-                        </div>
-                    </div>
-
-                </form>
-            </div>
-        </div>
-    </div>
     <?php endif; ?>
 
 

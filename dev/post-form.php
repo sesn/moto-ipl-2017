@@ -18,7 +18,6 @@ if(!empty($_POST['token'])) {
             $applicant_name = filter_var($_POST['applicantName'], FILTER_SANITIZE_STRING);
             $gender = filter_var($_POST['gender'], FILTER_SANITIZE_STRING);
             $dob = filter_var($_POST['dob'], FILTER_SANITIZE_STRING);
-            $dob = strtotime($dob);
             $shirt_size = filter_var($_POST['shirtSize'], FILTER_SANITIZE_STRING);
             $child_chance = filter_var($_POST['childChance'], FILTER_SANITIZE_STRING);
             $pune_different = filter_var($_POST['puneDifferent'], FILTER_SANITIZE_STRING);

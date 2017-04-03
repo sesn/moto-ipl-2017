@@ -8,7 +8,7 @@ checkLogin($_SESSION['admin_logged_in'], $admin_path);
 $date=date("Y-m-d H:i:s");
 
 //Table
-$table_name = 'tbl_questions';
+$table_name = 'tbl_form_entry';
 
 if($_POST["ID"] == "" && trim($_GET["status"])=="" ) {
 	$_SESSION['message'] = 'Question is not selected';
@@ -24,12 +24,12 @@ foreach($_POST['ID'] as $id) {
 
 	if($db->escape(trim($_REQUEST['status'])) == 'Inactivate') {
 
-		$field_values = "status = 'N', ".
+		$field_values = "status = '0', ".
 				"modified_at = '$date'";
 
 	} else {
 
-		$field_values = "status = 'Y', ".
+		$field_values = "status = '1', ".
 				"modified_at = '$date'";
 
 	}

@@ -9,7 +9,7 @@
 </head>
 <body>
 
- <div class="navbar headerNavbar">
+ <!--<div class="navbar headerNavbar">
       <nav>
         <div class="nav-wrapper">
           <a ui-sref="dashboard.overviewHashTag" class="logo">Control Panel - <?=SITE_NAME?></a>
@@ -18,6 +18,27 @@
           <ul class="right hide-on-med-and-down headerMenuLinkContainer">
             <li><a href="<?php echo $admin_path;?>/admin_area.php">Home</a></li>
              <li><a href="<?php echo $Main_Path;?>" target="_blank">Website</a></li>
+            <li><a href="<?php echo $admin_path?>/logout.php">Logout</a></li>
+          </ul>
+
+          <ul class="side-nav" id="mobile-demo">
+            <li><a href="../">Home</a></li>
+            <li><a href="<?php echo $admin_path?>/logout.php">Logout</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>-->
+
+<div class="navbar headerNavbar">
+      <nav>
+        <div class="nav-wrapper">
+          <a ui-sref="dashboard.overviewHashTag" class="logo"> <img src='https://www.motorola.in/profiles/motorola/logo/logo-animation-header-sm-0006.png'> </a>
+          <a>Dashboard</a>
+          <a href="" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+
+          <ul class="right hide-on-med-and-down headerMenuLinkContainer">
+            <li><a href="<?php echo $admin_path;?>/admin_area.php">Home</a></li>
+             <li><a href="<?php echo $site_url;?>" target="_blank">Website</a></li>
             <li><a href="<?php echo $admin_path?>/logout.php">Logout</a></li>
           </ul>
 
